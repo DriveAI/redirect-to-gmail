@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <title>Redirecting...</title>
 <script>
-    setTimeout(function() {
+    window.onload = function() {
         var emailAddress = 'driveai.pk@gmail.com';
         var subject = 'Request for Insights';
         var body = 'Hi, Good day';
 
         var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
-        window.location.href = mailtoLink;
-    }, 100); // Delay in milliseconds (100 milliseconds = 0.1 seconds)
+        window.open(mailtoLink, '_self');
+    };
 </script>
 </head>
 <body>
